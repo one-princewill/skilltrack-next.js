@@ -1,3 +1,5 @@
+"use client";
+import { useState } from 'react';
 import styles from './Faq.module.css'
 
 const Faq = () => {
@@ -23,18 +25,23 @@ const Faq = () => {
             Answer: 'We focus on verified, industry specific learning not generic video courses, so every minute you invest actually counts.'
         }
     ]
+    const [openIndex, setOpenIndex] = useState(null);
+    const accordionOpen = (index) => {
+        setOpenIndex(prev => (prev === index ? null : index));
+    }
 
     return(
-        <section className={styles.faqContainer}>
+        <section className={styles.faqContainer} id='Faq'>
             <h2>Frequently<br />Asked Questions</h2>
             <div className={styles.faqItems}>
                 {faq.map((item, index) => (
-                    <div key={index} className={styles.accordionItem}>
+                    <div onClick={() => accordionOpen(index)} key={index} 
+                    className={ openIndex === index ? `${styles.accordionItem} ${styles.accordionActive}` : styles.accordionItem}>
                         <div className={styles.accordionQuestion}>
                             <h3>{item.Question}</h3>
-                            <i className='bx  bx-chevron-down'    ></i>
+                            <i className={ openIndex === index ? 'bx  bx-chevron-up' : 'bx  bx-chevron-down'}></i>
                         </div>
-                        <p className={styles.accordionAnswer}>{item.Answer}</p>
+                        <p className={ openIndex === index ? `${styles.accordionAnswer} ${styles.accordionAnswerOpen} ` : styles.accordionAnswer} >{item.Answer}</p>
                     </div>
                 ))}
             </div>
@@ -42,4 +49,4 @@ const Faq = () => {
     );
 };
 
-export default Faq
+export default Faq;

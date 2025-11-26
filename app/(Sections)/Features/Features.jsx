@@ -4,7 +4,7 @@ const Features = () => {
 
 
     return (
-        <section>
+        <section id='Features'>
             <div className={styles.featuresContainer}>
                 <h2 className={styles.featuresHeader}>Build your skills, measure your growth, and stay fully certified <br /><span>individually or with your team</span>.</h2>
                 <div className={styles.featureCards}>
