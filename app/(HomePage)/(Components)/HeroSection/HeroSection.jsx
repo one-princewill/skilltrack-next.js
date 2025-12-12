@@ -1,4 +1,4 @@
-import Button from '@/Components/Button.jsx';
+import Button from '../Button.jsx';
 import styles from './HeroSection.module.css'
 
 const Hero = () => {

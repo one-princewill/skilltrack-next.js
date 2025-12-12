@@ -1,5 +1,5 @@
 import styles from './Cta.module.css'
-import Button from '@/Components/Button.jsx';
+import Button from '../Button.jsx';
 
 const Cta = () => {
     

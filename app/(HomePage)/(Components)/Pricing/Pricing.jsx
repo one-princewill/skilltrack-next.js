@@ -1,5 +1,5 @@
 "use client";
-import Button from '@/Components/Button.jsx';
+import Button from '../Button.jsx';
 import Testimonials from './Testimonials.jsx'
 import styles from './Pricing.module.css'
 import { useState } from 'react';
