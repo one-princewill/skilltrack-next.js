@@ -3,6 +3,7 @@
     border-radius: 24px;
     background: url('/cta.png'), linear-gradient(hsl(224, 86%, 69%), hsl(224, 99%, 46%));
     height: 100vh;
+    margin: 5px;
     background-repeat: no-repeat;
     background-position: right 120px, center;
     background-size: 500px, cover;

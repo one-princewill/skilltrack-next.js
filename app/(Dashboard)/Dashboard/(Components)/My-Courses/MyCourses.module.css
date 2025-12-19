@@ -1,0 +1,150 @@
+.myCourseContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 16px;
+}
+
+.searchContainer{
+    display: flex;
+    gap: 10px;
+}
+
+.searchInputs{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    position: relative;
+}
+
+.searchInput{
+    padding: 10px 15px;
+    width: 100%;
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 16px;
+    background-color: hsl(0, 0%, 90%);
+}
+
+.searchInputs i {
+    font-size: 1.5em;
+    color: hsl(0, 0%, 75%);
+    position: absolute;
+    right: 10px;
+}
+
+.headers{
+    display: flex;
+    justify-content: center;
+    font-size: 1em;
+    font-family: roboto;
+    font-weight: 600;
+    margin: 30px;
+    position: relative;
+}
+
+.headers::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 10%;
+  height: 3px;
+  background-color: hsl(240, 100%, 50%);
+  border-radius: 8px;
+  margin-top: 3px;
+}
+
+.courseCards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.courseCard{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 500px;
+    padding: 16px;
+    border-radius: 16px;
+    box-shadow: 3px 3px 6px hsla(0, 0%, 0%, 0.25);
+}
+
+.courseDetails{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.courseImage{
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.courseText{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.courseTitle{
+    font-size: 1.2em;
+    font-family: roboto;
+    font-weight: 500;
+}
+
+.courseDescription{
+    font-size: 1em;
+    font-family: roboto;
+    font-weight: 400;
+    color: hsl(0, 0%, 45%);
+}
+
+.courseLessons{
+    font-size: 0.9em;
+    font-family: roboto;
+}
+
+.courseLessons span{
+    color: hsl(0, 0%, 75%);
+}
+
+.courseActions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.courseCategory{
+    font-size: 1em;
+    font-family: roboto;
+    font-weight: 400;
+}
+
+.courseCategory span{
+    color: hsl(0, 0%, 75%);
+    font-weight: 500;
+}
+
+.resumeButton, .certificateButton{
+    font-size: 1em;
+    font-family: roboto;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 99%, 46%);
+    width: fit-content;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.noCourses{
+    font-size: 1.5em;
+    font-family: roboto;
+    font-family: 500;
+    color: hsl(0, 0%, 75%);
+}

@@ -1,0 +1,72 @@
+.dashboardContainer {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  margin-top: 30px;
+  overflow-y: auto;
+  border-right: 1px solid hsl(224, 99%, 46%);
+}
+
+.sidebarItems {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.dashboardItems{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dashboardItem, .Logout {
+    display: flex;
+    align-items: center;
+    font-size: 1.3em;
+    font-family: roboto;
+    font-weight: 500;
+    color: hsl(227, 98%, 78%);
+    padding: 10px 15px;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.dashboardItem:hover, .Logout:hover{
+    color: hsl(224, 99%, 46%);
+}
+
+.settingsItems{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid hsl(224, 99%, 46%);
+}
+
+.activeItem{
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+  font-family: roboto;
+  font-weight: 500;
+  padding: 10px 15px;
+  gap: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 99%, 46%);
+  border-radius: 8px 0px 0px 8px;
+}
+
+.mainContent {
+  flex: 1;
+  margin-top: 50px;
+  overflow-y: auto;
+}

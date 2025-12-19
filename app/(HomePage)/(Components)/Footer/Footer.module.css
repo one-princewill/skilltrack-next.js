@@ -39,7 +39,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 1.5px; /* thickness of the border */
+  height: 1.5px;
   background: linear-gradient(to right, hsl(240, 100%, 50%), hsl(0, 0%, 100%));
 }
 

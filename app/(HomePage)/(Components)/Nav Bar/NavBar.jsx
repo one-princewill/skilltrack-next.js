@@ -6,10 +6,10 @@ const Navbar = () => {
 
 
     return(
-        <nav className={styles.navWrapper}>
-           <div className={styles.navBarContainer}>
-             <div>
-                <img src="/SkillTrack_Logo.png" alt="" className={styles.navImg}/>
+        <nav className={styles.navBarContainer}>
+             <div className={styles.navLogo}>
+                <img src="/No-text-logo.png" alt="" className={styles.navImg}/>
+                <Link href="#Home">SkillTrack</Link>
             </div>
             <div className={styles.navBtns}>
                 <div className={styles.navLinks}>
@@ -20,7 +20,6 @@ const Navbar = () => {
                 </div>
                 <Button text='Sign Up' className={styles.signUpBtn}/>
             </div>
-           </div>
         </nav>
     )
 };

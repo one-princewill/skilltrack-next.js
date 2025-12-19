@@ -1,0 +1,90 @@
+.navbarContainer{
+    width: 100vw;
+    height: 50px;
+    background-color: hsl(224, 99%, 46%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.logoText{
+    font-size: 1.2em;
+    font-family: roboto;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.navBtns{
+    display: flex;
+    gap: 15px;
+}
+
+.navLinks{
+    display: flex;
+    align-items: center;
+}
+
+.navLink{
+    font-size: 1em;
+    font-family: roboto;
+    font-weight: 400;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.activeLink{
+    font-weight: 600;
+    border-radius: 3px;
+    position: relative;
+}
+
+.activeLink::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 8px;
+    margin-top: 3px;
+}
+
+.userProfile{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.userImg{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.userName{
+    font-size: 1em;
+    font-family: roboto;
+    font-weight: 500;
+    color: hsl(0, 0%, 100%);
+}
